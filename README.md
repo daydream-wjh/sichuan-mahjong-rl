@@ -1,7 +1,7 @@
-# shichuanrl —— 四川麻将强化学习（Suphx 特征 + PPO2）
+# sichuan-mahjong-rl —— 四川麻将强化学习（Suphx 特征 + PPO2）
 
 > 四川麻将（定缺 / 换三张 / 无吃牌 / 27 张牌）的强化学习智能体。
-> 沿用上饶麻将版本（`rlcode`）的框架与模型代码，把规则层换成四川玩法、特征编码改为 `card_preprocess_suphx_sc`。
+> 沿用上饶麻将版本（`mahjong-rl-trainer`）的框架与模型代码，把规则层换成四川玩法、特征编码改为 `card_preprocess_suphx_sc`。
 
 ## 项目简介
 
@@ -102,7 +102,7 @@ choose_color_sichuan_url = "http://10.0.10.203:8989/sichuan/v2/choose_color"
 ## 目录结构
 
 ```
-shichuanrl/
+sichuan-mahjong-rl/
 ├── mahEnv.py                 # gym.Env：动作 27、观测 (852, 27, 1)
 ├── mah_state.py              # RL_state：四川版（jing_card 作废）
 ├── mahjong.py                # 规则核心（84 KB / 1550 行）：定缺、换三张、刮风下雨、查花猪
